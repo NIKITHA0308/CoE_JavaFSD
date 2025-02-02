@@ -1,1 +1,87 @@
+import java.util.PriorityQueue;
+import java.util.Comparator;
+
+class Task {
+    private String id;
+    private String description;
+    private int priority;
+
+    public Task(String id, String description, int priority) {
+        this.id = id;
+        this.description = description;
+        this.priority = priority;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getPriority() {
+        return priority;
+    }
+
+    @Override
+    public String toString() {
+        return "Task ID: " + id + ", Description: " + description + ", Priority: " + priority;
+    }
+}
+
+class TaskManager {
+    private PriorityQueue<Task> taskQueue;
+
+    public TaskManager() {
+        taskQueue = new PriorityQueue<>(Comparator.comparingInt(Task::getPriority).reversed());  // Higher priority tasks first
+    }
+
+    public void addTask(String id, String description, int priority) {
+        Task task = new Task(id, description, priority);
+        taskQueue.add(task);
+        System.out.println("Added: " + task);
+    }
+
+    public void removeTask(String id) {
+        boolean removed = taskQueue.removeIf(task -> task.getId().equals(id));
+        if (removed) {
+            System.out.println("Task with ID " + id + " removed.");
+        } else {
+            System.out.println("Task with ID " + id + " not found.");
+        }
+    }
+
+    public Task getHighestPriorityTask() {
+        return taskQueue.peek(); 
+    }
+
+    public void displayTasks() {
+        System.out.println("Current Tasks in Queue:");
+        for (Task task : taskQueue) {
+            System.out.println(task);
+        }
+    }
+}
+public class Task1 {
+	public static void main(String[] args) {
+        TaskManager taskManager = new TaskManager();
+
+        taskManager.addTask("1", "Finish homework", 5);
+        taskManager.addTask("2", "Clean the house", 3);
+        taskManager.addTask("3", "Buy groceries", 4);
+        taskManager.addTask("4", "Attend meeting", 2);
+
+        taskManager.displayTasks();
+
+        Task highestPriorityTask = taskManager.getHighestPriorityTask();
+        System.out.println("Highest Priority Task: " + highestPriorityTask);
+
+        taskManager.removeTask("2");
+
+        taskManager.displayTasks();
+
+}
+
+}
 
