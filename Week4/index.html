@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Online Education Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EduLearnClub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="enroll.html">Enroll</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Enhance Your Skills with the Best Online Courses</h2>
+            <p>Learn from industry experts and boost your career.</p>
+            <button onclick="exploreCourses()">Explore Courses</button>
+        </section>
+        <section class="main-grid">
+            <h2> Partner Companies:</h2>
+            <div class="grid-item">GlobalTech Pvt Lmt </div>
+            <div class="grid-item">All Indian Lmt</div>
+            <div class="grid-item">Technologies Future</div>
+            <div class="grid-item">Goals Start Pvt Lmt</div>
+        </section>
+        <section class="carousel-container">
+            <div class="carousel">
+                <div class="slide active">
+                    <img src="images/web-development.jpg" alt="Web Development">
+                    <div class="caption">Web Development - Learn HTML, CSS, and JS</div>
+                </div>
+                <div class="slide">
+                    <img src="images/machine-learning.jpg" alt="Machine Learning">
+                    <div class="caption">Machine Learning - AI and ML Fundamentals</div>
+                </div>
+                <div class="slide">
+                    <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+                    <div class="caption">Cybersecurity - Protect Networks & Data</div>
+                </div>
+                <div class="slide">
+                    <img src="images/cloud-computing.jpg" alt="Cloud Computing">
+                    <div class="caption">Cloud Computing - AWS, Azure, GCP</div>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 EduLearn. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
