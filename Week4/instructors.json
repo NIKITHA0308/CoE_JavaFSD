@@ -1,0 +1,36 @@
+{
+    "instructors": [
+        {
+            "name": "John Doe",
+            "biography": "John Doe is an experienced web developer with over 10 years of experience in HTML, CSS, and JavaScript.",
+            "courses": ["Web Development"],
+            "ratings": [
+                { "rating": 4.5, "review": "Excellent instructor!" }
+            ]
+        },
+        {
+            "name": "Jane Smith",
+            "biography": "Jane Smith is a renowned expert in AI and Machine Learning with extensive experience in building AI models.",
+            "courses": ["Machine Learning"],
+            "ratings": [
+                { "rating": 4.8, "review": "Outstanding knowledge and teaching style." }
+            ]
+        },
+        {
+            "name": "Mike Johnson",
+            "biography": "Mike Johnson is a cybersecurity specialist with a decade of experience in protecting networks and data.",
+            "courses": ["Cybersecurity"],
+            "ratings": [
+                { "rating": 4.7, "review": "Highly knowledgeable and engaging." }
+            ]
+        },
+        {
+            "name": "Sarah Lee",
+            "biography": "Sarah Lee is a cloud computing expert with proficiency in AWS, Azure, and Google Cloud.",
+            "courses": ["Cloud Computing"],
+            "ratings": [
+                { "rating": 4.6, "review": "Very clear and informative." }
+            ]
+        }
+    ]
+}
