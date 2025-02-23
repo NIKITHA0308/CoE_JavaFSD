@@ -1,0 +1,52 @@
+{
+    "courses": [
+        {
+            "title": "Web Development",
+            "description": "Learn HTML, CSS, and JavaScript. Build your own website from scratch.",
+            "prerequisites": [
+                "Basic computer skills",
+                "Interest in web development"
+            ],
+            "reviews": [
+                { "name": "John", "review": "Great course! Learned a lot." },
+                { "name": "Jane", "review": "Highly recommend this for beginners." }
+            ]
+        },
+        {
+            "title": "Machine Learning",
+            "description": "Explore AI and Machine Learning concepts. Build models and understand algorithms.",
+            "prerequisites": [
+                "Basic programming knowledge",
+                "Interest in AI and Machine Learning"
+            ],
+            "reviews": [
+                { "name": "Alice", "review": "In-depth and well-structured course." },
+                { "name": "Bob", "review": "Highly informative, loved the hands-on projects." }
+            ]
+        },
+        {
+            "title": "Cybersecurity",
+            "description": "Protect data and networks. Learn about security protocols and threat detection.",
+            "prerequisites": [
+                "Basic IT knowledge",
+                "Interest in cybersecurity"
+            ],
+            "reviews": [
+                { "name": "Charlie", "review": "Crucial for anyone in IT. Very detailed." },
+                { "name": "Dana", "review": "Fantastic course with real-world applications." }
+            ]
+        },
+        {
+            "title": "Cloud Computing",
+            "description": "Understand AWS, Azure, and Google Cloud. Learn cloud services and deployment.",
+            "prerequisites": [
+                "Basic knowledge of cloud services",
+                "Interest in cloud computing"
+            ],
+            "reviews": [
+                { "name": "Eve", "review": "Great overview of major cloud platforms." },
+                { "name": "Frank", "review": "Perfect for beginners and professionals alike." }
+            ]
+        }
+    ]
+}

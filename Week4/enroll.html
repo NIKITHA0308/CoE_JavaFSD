@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll - EduLearn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Enroll in a Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="enroll.html">Enroll</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="enrollment-form">
+            <h2>Personal Details</h2>
+            
+            Name: <input type="text" id="name" name="name" required><br><br>
+            Email: <input type="email" id="email" name="email" required><br><br>
+            Phone: <input type="tel" id="phone" name="phone" required><br><br>
+            
+            <h2>Course Selection</h2>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Choose a course</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+            </select><br><br>
+            <button type="submit">Enroll</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 EduLearn. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
